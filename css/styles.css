@@ -368,23 +368,25 @@
 
         .pub-list {
             list-style: none;
+            counter-reset: pub;
         }
 
         .pub-item {
             margin-bottom: 20px;
             padding-bottom: 20px;
             border-bottom: 1px solid #f3f4f6;
+            counter-increment: pub;
         }
 
         .pub-item:last-child {
             border-bottom: none;
         }
 
-        .pub-number {
+        .pub-header::before {
+            content: "[" counter(pub) "]";
             display: inline-block;
             color: var(--text-light);
             font-weight: 500;
-            margin-right: 8px;
             font-size: 0.9rem;
             vertical-align: top;
         }
