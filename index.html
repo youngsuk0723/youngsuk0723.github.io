@@ -20,50 +20,45 @@
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-    <div class="top-nav">
-        <div class="nav-tabs">
-            <button class="tab-btn active" data-tab="about">About</button>
-            <button class="tab-btn" data-tab="publications">Publications</button>
-            <button class="tab-btn" data-tab="resume">Resume</button>
-            <button class="tab-btn" data-tab="activities">Activities</button>
-            <button class="tab-btn" data-tab="mentorship">Mentorship</button>
-        </div>
-    </div>
-
-    <header>
-        <div class="container">
-            <div class="header-content">
-                <div class="profile-photo">
-                    <img src="youngsuk_photo.jpeg" alt="Youngsuk Park" style="display:none;" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
-                    <div class="placeholder">Add your photo here as "youngsuk_photo.jpeg"</div>
-                </div>
-                <div class="header-text">
-                    <h1>Youngsuk Park</h1>
-                    <p class="subtitle">Sr. Applied Scientist & Research Lead | AWS Annapurna Science</p>
-                    <div class="contact-links">
-                        <a href="mailto:youngsuk@cs.stanford.edu"><i class="fas fa-envelope"></i> youngsuk@cs.stanford.edu</a>
-                        <a href="https://www.linkedin.com/in/y-park/" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a>
-                        <a href="https://scholar.google.com/citations?user=jWROvQ0AAAAJ&hl=en" target="_blank"><i class="fas fa-graduation-cap"></i> Google Scholar</a>
-                    </div>
-                </div>
+    <div class="layout">
+        <aside class="sidebar">
+            <div class="profile-photo">
+                <img src="youngsuk_photo.jpeg" alt="Youngsuk Park" style="display:none;" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                <div class="placeholder">Add your photo here as "youngsuk_photo.jpeg"</div>
             </div>
-        </div>
-    </header>
+            <div class="sidebar-intro">
+                <h1>Youngsuk Park</h1>
+                <p class="subtitle">Sr. Applied Scientist & Research Lead</p>
+                <p class="affiliation">AWS Annapurna Science</p>
+            </div>
+            <div class="contact-links">
+                <a href="mailto:youngsuk@cs.stanford.edu"><i class="fas fa-envelope"></i> youngsuk@cs.stanford.edu</a>
+                <a href="https://www.linkedin.com/in/y-park/" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a>
+                <a href="https://scholar.google.com/citations?user=jWROvQ0AAAAJ&hl=en" target="_blank"><i class="fas fa-graduation-cap"></i> Google Scholar</a>
+            </div>
 
-    <main class="container">
-        <!-- Content sections will be loaded here -->
-        <div id="about" class="tab-content active"></div>
-        <div id="publications" class="tab-content"></div>
-        <div id="resume" class="tab-content"></div>
-        <div id="activities" class="tab-content"></div>
-        <div id="mentorship" class="tab-content"></div>
-    </main>
+            <nav class="nav-tabs">
+                <button class="tab-btn active" data-tab="about">About</button>
+                <button class="tab-btn" data-tab="publications">Publications</button>
+                <button class="tab-btn" data-tab="resume">Resume</button>
+                <button class="tab-btn" data-tab="activities">Activities</button>
+                <button class="tab-btn" data-tab="mentorship">Mentorship</button>
+            </nav>
 
-    <footer>
-        <div class="container">
-            <p>&copy; 2026 Youngsuk Park. Last updated February 2026.</p>
-        </div>
-    </footer>
+            <footer class="sidebar-footer">
+                <p>&copy; 2026 Youngsuk Park.<br>Last updated February 2026.</p>
+            </footer>
+        </aside>
+
+        <main class="main-content">
+            <!-- Content sections will be loaded here -->
+            <div id="about" class="tab-content active"></div>
+            <div id="publications" class="tab-content"></div>
+            <div id="resume" class="tab-content"></div>
+            <div id="activities" class="tab-content"></div>
+            <div id="mentorship" class="tab-content"></div>
+        </main>
+    </div>
 
     <!-- External JavaScript -->
     <script src="js/script.js"></script>
