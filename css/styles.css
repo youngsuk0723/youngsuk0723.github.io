@@ -366,16 +366,21 @@
             gap: 10px;
         }
 
+        /* Continuous descending index across all publication sections.
+           Reset value = total papers + 1 (update if the paper count changes). */
+        #publications {
+            counter-reset: pub 47;
+        }
+
         .pub-list {
             list-style: none;
-            counter-reset: pub;
         }
 
         .pub-item {
             margin-bottom: 20px;
             padding-bottom: 20px;
             border-bottom: 1px solid #f3f4f6;
-            counter-increment: pub;
+            counter-increment: pub -1;
         }
 
         .pub-item:last-child {
