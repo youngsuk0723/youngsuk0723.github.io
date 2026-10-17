@@ -369,7 +369,7 @@
         /* Continuous descending index across all publication sections.
            Reset value = total papers + 1 (update if the paper count changes). */
         #publications {
-            counter-reset: pub 48;
+            counter-reset: pub 47;
         }
 
         .pub-list {
